@@ -19,13 +19,25 @@ def read_excel():
         y.append(sheet.cell_value(i,1))
         z.append(sheet.cell_value(i,2))
 
-    return x, y, z
-
+        return x, y, z
 def priceret(prices):
     returns = []
     for i in range(1, len(prices)-1):
         returns.append((np.log(prices[i]) - np.log(prices[i-1]))/np.log(prices[i-1]))
     return returns
+def listAverage(ist):
+    sum = 0
+    for i in range(0, len(ist)):
+        sum = sum + ist[i]
+
+    average = sum/len(ist)
+    return (average)
+def key_ret(returns, key):
+    kreturn = []
+    for i in range(0,len(key)):
+        if key[i] == 1:
+            kreturn.append(returns[i-1])
+    return (listAverage(kreturn))
 
 [x, y, z] = read_excel()
 
@@ -33,4 +45,8 @@ def priceret(prices):
 #print(x[0:4], y[0:4], z[0:4])
 
 returns = priceret(y)
-print(returns)
+allreturn = listAverage(returns)
+kreturn = key_ret(returns,z)
+
+print("The average return on all of our dates is: ", allreturn)
+print("The average return on our key dates is: ", kreturn)
