@@ -6,9 +6,7 @@ import datetime as dt
 #Grab pound/USD information
 fx = pd.read_csv("CUR-GBP.csv", parse_dates= True, dayfirst = False, keep_date_col=True)
 fx2 = fx.set_index(["DATE"]) #Re-index the above into something we we can search
-fx2 = fx2.sort_index(fx2)
-print(fx2.head(5))
-fx2 = fx2.loc[:"2013-01-01"] # Remove un-needed data
+fx2 = fx2.loc["2013-01-01":] # Remove un-needed data
 fx2 = 1/fx2 # Convert GBP/USD to USD/GBP
 
 #Make significant dates
