@@ -1,6 +1,6 @@
 #This course took place on March 7th, 2017.
 #
-
+import math
 #Calculate the median of a list
 def median (x):
     sort = sorted(x)
@@ -11,6 +11,35 @@ def median (x):
         return (x1+x2)/2
     else:
         return (sort[midpoint])
+
+def mean(x):
+    su = sum(x)
+    average = su/len(x)
+    return average
+
+def variance(x):
+    average = mean(x)
+    n = len(x)
+    error = []
+    for element in x:
+        ie = (element - average)**2
+        error.append(ie)
+    return sum(error)/n
+
+def correlation(x, y):
+    if len(x) != len(y):
+        return ("The lists are not the same size!")
+    topsum = 0
+    xmean = mean(x)
+    ymean = mean(y)
+    xdev = variance(x)**0.5
+    ydev = variance(y)**0.5
+    for i in range(0,len(x)):
+        product = (x[i] - xmean)*(y[i] - ymean)
+        topsum = topsum + product
+    correlation = (topsum/((len(x) -1) * xdev * ydev))
+    return correlation
+
 
 """
 The __name__ thing is based on the way that Python interacts with the rest of
@@ -31,3 +60,19 @@ if __name__ == '__main__':
 
     print("The odd list of ", olist, " has a median of ", o_median,
           " and the even list of ", elist, "has a median of ", e_median, ".")
+
+    vlist = [1,9,9,100,5]
+
+    v_var = variance(vlist)
+    stdev = v_var**0.5
+
+    print("The variance of list", vlist, "is ", v_var, ".")
+    print("The standard deviation of the same list is", stdev, ".")
+
+    x_list = [3,0.5,3,4,0.5,2]
+    y_list = [6,1,6,8,1,4]
+
+    corr = correlation(x_list, y_list)
+
+    print()
+    print("The correlation between our two lists is", corr)
