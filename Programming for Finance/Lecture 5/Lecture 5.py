@@ -76,3 +76,6 @@ if __name__ == '__main__':
 
     print()
     print("The correlation between our two lists is", corr)
+
+#And with that, we finish the lecture. Not bad!
+#Well, everyone else is kinda bored, but I'm having fun.
