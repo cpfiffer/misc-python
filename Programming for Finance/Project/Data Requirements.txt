@@ -1,0 +1,16 @@
+What are the things I need to have for the project?
+
+1. Key events of Brexit
+2. GBP to Euro
+3. GBP to USD
+4. FTSE 100
+5. S&P 500
+6. UK 3 year yields
+7. UK 10 year yields
+8. Chinese Index
+9. Nikkei Index
+10. DAXX
+11. French Index
+12. Italian Index
+13. Russian Index
+14. Positive/negative/neutral indicator
