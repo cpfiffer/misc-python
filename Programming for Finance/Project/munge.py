@@ -35,14 +35,16 @@ def read_excel():
         book = pd.read_excel("Progdata.xlsx", sheetname=i,
                             index_col=0)
         df = df.join(book, how='outer')
-    df = df.fillna(0)
+
+    df["KY"] = df["KY"].fillna(0)
+    df = df.fillna(method = 'ffill')
     df[["KY"]] = df[["KY"]].astype(int)
     return(df)
 
 if __name__ == '__main__':
 
     df = read_excel()
-    print(df.tail())
+    print(df.head())
     print(df.ix["2016-06-24"])
     print(df.dtypes)
     df.to_pickle("data.csv")

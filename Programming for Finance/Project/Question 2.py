@@ -11,19 +11,24 @@ import pandas as pd
 import quandl
 import datetime as dt
 
-#Dates from Timeline.csv, in string format because it's easier.
-dates = ["20130123", "20160122", "20160623", "20160624", "20160713"]
+def load_data():
+    #Import our data from munge.py
+    data = pd.read_pickle("data.csv")
+    return data
+def get_returns(data):
+    #Converts the dataframe of prices into returns.
+    returns = data.ix[:,0:10].pct_change(1)
+    returns["KY"] = data["KY"]
+    returns = returns[2:]
+    returns.to_pickle("returns.csv") #In case I need this elsewhere.
+    return returns
+def key_returns(returns):
+    #What were the returns on key dates?
+    k_event = returns[returns.KY!=0]
+    return k_event
 
-#import currency data
-fx = pd.read_csv("CUR-GBP.csv", parse_dates=True)
-
-#Cast the object type of date to a datetime format
-fx["DATE"] = fx["DATE"].astype("datetime64[ns]")
-
-#index the FX data by date, so we can search it later.
-fx_di = fx.set_index('DATE')
-
-print(fx_di.head(5))
-
-for i in range(0, len(dates)):
-    print(fx_di.loc[dates[i]])
+if __name__ == '__main__':
+    data = load_data()
+    returns = get_returns(data)
+    k_event = key_returns(returns)
+    print(k_event.head())
