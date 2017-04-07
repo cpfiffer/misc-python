@@ -1,0 +1,25 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 GBPEUR   R-squared:                       0.010
+Model:                            OLS   Adj. R-squared:                  0.009
+Method:                 Least Squares   F-statistic:                     13.14
+Date:                Fri, 31 Mar 2017   Prob (F-statistic):           0.000300
+Time:                        12:35:03   Log-Likelihood:                 4954.7
+No. Observations:                1295   AIC:                            -9905.
+Df Residuals:                    1293   BIC:                            -9895.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [95.0% Conf. Int.]
+------------------------------------------------------------------------------
+Intercept   1.259e-05      0.000      0.086      0.932        -0.000     0.000
+KY            -0.0078      0.002     -3.625      0.000        -0.012    -0.004
+==============================================================================
+Omnibus:                      299.307   Durbin-Watson:                   1.941
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             3769.744
+Skew:                          -0.698   Prob(JB):                         0.00
+Kurtosis:                      11.241   Cond. No.                         14.7
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

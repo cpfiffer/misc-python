@@ -1,0 +1,30 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   FTSE   R-squared:                       0.636
+Model:                            OLS   Adj. R-squared:                  0.632
+Method:                 Least Squares   F-statistic:                     167.6
+Date:                Fri, 31 Mar 2017   Prob (F-statistic):          9.66e-123
+Time:                        12:56:02   Log-Likelihood:                 2411.4
+No. Observations:                 582   AIC:                            -4809.
+Df Residuals:                     575   BIC:                            -4778.
+Df Model:                           6                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [95.0% Conf. Int.]
+------------------------------------------------------------------------------
+Intercept     -0.0030      0.000    -15.063      0.000        -0.003    -0.003
+CAC            0.3221      0.043      7.414      0.000         0.237     0.407
+DAX            0.1251      0.037      3.372      0.001         0.052     0.198
+HSI            0.0882      0.017      5.319      0.000         0.056     0.121
+SNP            0.1140      0.025      4.596      0.000         0.065     0.163
+MICEX          0.0467      0.015      3.172      0.002         0.018     0.076
+FTMIB         -0.0389      0.020     -1.948      0.052        -0.078     0.000
+==============================================================================
+Omnibus:                       46.434   Durbin-Watson:                   1.878
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               58.843
+Skew:                          -0.661   Prob(JB):                     1.67e-13
+Kurtosis:                       3.824   Cond. No.                         335.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

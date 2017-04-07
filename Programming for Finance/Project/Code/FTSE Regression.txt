@@ -1,0 +1,25 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   FTSE   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                 -0.001
+Method:                 Least Squares   F-statistic:                   0.03230
+Date:                Fri, 31 Mar 2017   Prob (F-statistic):              0.857
+Time:                        12:35:03   Log-Likelihood:                 4275.8
+No. Observations:                1295   AIC:                            -8548.
+Df Residuals:                    1293   BIC:                            -8537.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [95.0% Conf. Int.]
+------------------------------------------------------------------------------
+Intercept      0.0002      0.000      0.884      0.377        -0.000     0.001
+KY            -0.0007      0.004     -0.180      0.857        -0.008     0.007
+==============================================================================
+Omnibus:                       70.740   Durbin-Watson:                   2.004
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              248.107
+Skew:                          -0.113   Prob(JB):                     1.33e-54
+Kurtosis:                       5.132   Cond. No.                         14.7
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

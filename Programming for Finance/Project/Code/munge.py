@@ -39,6 +39,8 @@ def read_excel():
     df["KY"] = df["KY"].fillna(0)
     df = df.fillna(method = 'ffill')
     df[["KY"]] = df[["KY"]].astype(int)
+    #Cut the bottom of the dataframe off.
+    df = df.loc["2012-03-26":]
     return(df)
 
 if __name__ == '__main__':

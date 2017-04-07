@@ -1,0 +1,25 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 GBPUSD   R-squared:                       0.021
+Model:                            OLS   Adj. R-squared:                  0.020
+Method:                 Least Squares   F-statistic:                     27.44
+Date:                Fri, 31 Mar 2017   Prob (F-statistic):           1.89e-07
+Time:                        12:35:03   Log-Likelihood:                 4886.4
+No. Observations:                1295   AIC:                            -9769.
+Df Residuals:                    1293   BIC:                            -9758.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [95.0% Conf. Int.]
+------------------------------------------------------------------------------
+Intercept     -0.0001      0.000     -0.903      0.367        -0.000     0.000
+KY            -0.0119      0.002     -5.238      0.000        -0.016    -0.007
+==============================================================================
+Omnibus:                      574.758   Durbin-Watson:                   2.017
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            21630.846
+Skew:                          -1.370   Prob(JB):                         0.00
+Kurtosis:                      22.834   Cond. No.                         14.7
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

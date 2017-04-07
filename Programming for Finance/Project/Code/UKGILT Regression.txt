@@ -1,0 +1,25 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 UKGILT   R-squared:                       0.003
+Model:                            OLS   Adj. R-squared:                  0.002
+Method:                 Least Squares   F-statistic:                     4.159
+Date:                Fri, 31 Mar 2017   Prob (F-statistic):             0.0416
+Time:                        12:35:03   Log-Likelihood:                 3783.5
+No. Observations:                1295   AIC:                            -7563.
+Df Residuals:                    1293   BIC:                            -7553.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [95.0% Conf. Int.]
+------------------------------------------------------------------------------
+Intercept     -0.0002      0.000     -0.452      0.651        -0.001     0.001
+KY             0.0109      0.005      2.039      0.042         0.000     0.021
+==============================================================================
+Omnibus:                     2462.577   Durbin-Watson:                   2.053
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):          5055682.742
+Skew:                         -13.725   Prob(JB):                         0.00
+Kurtosis:                     307.865   Cond. No.                         14.7
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

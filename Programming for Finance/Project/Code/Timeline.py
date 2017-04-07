@@ -14,7 +14,7 @@ dates = [dt.date(2013,1,23), dt.date(2016,1,22), dt.date(2016,6,23),
          dt.date(2016,6,24), dt.date(2016,7,13)]
 
 #Labels for annotation
-labels = ["Cameron promises referendum", "Referendum date selected",
+labels = ["Cameron promises referendum", "Conservative party wins", "Referendum date selected",
             "Referendum held", "Results announced", "Cameron resigns, May steps in"]
 
 #fx2.plot()
@@ -44,7 +44,9 @@ mp.legend()
 mp.ylabel("GBP vs. Euro and Dollar")
 mp.xlabel("Date")
 mp.title("Exchange Rates on Key Brexit Dates")
+mp.xticks(rotation=45)
 mp.grid(True)
 
 #Show the plot we've made.
+mp.savefig("timeline.png")
 mp.show()

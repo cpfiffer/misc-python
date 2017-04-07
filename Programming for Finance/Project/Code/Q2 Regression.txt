@@ -1,0 +1,28 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                     KY   R-squared:                       0.029
+Model:                            OLS   Adj. R-squared:                  0.026
+Method:                 Least Squares   F-statistic:                     9.670
+Date:                Sat, 25 Mar 2017   Prob (F-statistic):           1.05e-07
+Time:                        10:13:09   Log-Likelihood:                 1782.2
+No. Observations:                1295   AIC:                            -3554.
+Df Residuals:                    1290   BIC:                            -3528.
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [95.0% Conf. Int.]
+------------------------------------------------------------------------------
+Intercept      0.0036      0.002      2.098      0.036         0.000     0.007
+GBPUSD        -1.3509      0.356     -3.794      0.000        -2.049    -0.652
+GBPEUR        -0.7154      0.378     -1.895      0.058        -1.456     0.025
+FTSE           0.1206      0.195      0.620      0.536        -0.261     0.503
+UKGILT         0.1661      0.134      1.243      0.214        -0.096     0.428
+==============================================================================
+Omnibus:                     2572.421   Durbin-Watson:                   1.650
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):          3301159.011
+Skew:                          15.502   Prob(JB):                         0.00
+Kurtosis:                     248.395   Cond. No.                         266.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

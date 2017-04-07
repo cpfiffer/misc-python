@@ -1,0 +1,31 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                     KY   R-squared:                       0.030
+Model:                            OLS   Adj. R-squared:                  0.025
+Method:                 Least Squares   F-statistic:                     5.771
+Date:                Sat, 25 Mar 2017   Prob (F-statistic):           1.34e-06
+Time:                        09:17:13   Log-Likelihood:                 1797.9
+No. Observations:                1303   AIC:                            -3580.
+Df Residuals:                    1295   BIC:                            -3538.
+Df Model:                           7                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [95.0% Conf. Int.]
+------------------------------------------------------------------------------
+Intercept      0.0035      0.002      2.035      0.042         0.000     0.007
+GBPUSD        -1.4357      0.359     -3.999      0.000        -2.140    -0.731
+GBPEUR        -0.6726      0.393     -1.710      0.087        -1.444     0.099
+FTSE           0.1799      0.398      0.452      0.651        -0.601     0.960
+SNP            0.3820      0.277      1.380      0.168        -0.161     0.925
+HSI            0.1401      0.180      0.780      0.435        -0.212     0.492
+DAX           -0.0958      0.400     -0.240      0.810        -0.880     0.688
+CAC           -0.2317      0.431     -0.537      0.591        -1.078     0.614
+==============================================================================
+Omnibus:                     2589.563   Durbin-Watson:                   1.647
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):          3347450.613
+Skew:                          15.522   Prob(JB):                         0.00
+Kurtosis:                     249.360   Cond. No.                         330.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
