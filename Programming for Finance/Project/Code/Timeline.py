@@ -24,7 +24,7 @@ fig, ax = mp.subplots()
 ax.plot(fx3['GBPUSD'], label = "GBP/USD")
 ax.plot(fx3['GBPEUR'], label = "GBP/EUR")
 
-
+mp.plot(fx)
 labi = 0
 for i in range(0,len(fx2)):
     if fx2["KY"][i] == 1:
